@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-text" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/12/23/text/" class="article-date">
+  <time class="dt-published" datetime="2020-12-23T04:10:22.000Z" itemprop="datePublished">2020-12-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/12/23/text/">在Android上搭建Hexo个人博客（本地篇）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>下载安装termux<br>（Google Play）［<a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.termux%EF%BC%BD">https://play.google.com/store/apps/details?id=com.termux］</a><br>（F-Droif）［<a target="_blank" rel="noopener" href="https://f-droid.org/packages/com.termux/%EF%BC%BD">https://f-droid.org/packages/com.termux/］</a><br>更新termux<br><code>pkg updata &amp;&amp; pkg upgrade -y</code></p>
+
+<p>查看一下信息，如果OS显示Android 11那么可以完全跟着笔记操作。如果不是，那么跟着笔记操作有的步骤可能会显得多余，但是并不影响结果。(这一步可以跳过）<br><code>pkg install neofetch &amp;&amp; neofetch</code></p>
+
+<p>安装git<br><code>pkg install git -y</code><br>查看版本检查是否安装成功<br><code>git --version</code></p>
+
+<p>安装node长期稳定版<br><code>pkg install nodejs-lts -y</code><br>惯例查看版本检查是否安装成功<br><code>node -v &amp;&amp; npm -v</code></p>
+
+<p>安装proot模拟root<br><code>pkg install proot -y</code><br>检查是否安装成功<br><code>proot --version</code></p>
+
+<p>模拟root，以后的操作均在此操作前提下进行<br><code>termux-chroot</code><br>准备工作已经完成，我们正式开始与hexo的交锋，安装hexo框架<br><code>npm install -g hexo-cli</code><br>检查是否安装成功<br><code>hexo -v</code></p>
+
+<p>将一个目录初始化为网站根目录<br><code>hexo init 自己换一个</code></p>
+
+<p>进入初始化的目录<br><code>cd 自定义名字</code></p>
+
+<p>安装基本工具<br><code>npm install</code></p>
+
+<p>好了，我们已经成功搭建了hexo，现在我们就可以启动本地服务器了。首先，我们先生成静态文件<br><code>hexo generate</code>或者<code>hexo g</code><br>启动本地服务器<br><code>hexo server</code></p>
+
+<p>此时你会得到一个网址，这就是你的网站地址，复制到浏览器打开就能访问自己的Hexo博客了</p>
+
+<p>在此处你可以找到你创建的文章，以方便你对其进行修改</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/12/23/text/" data-id="ckj24wv0i0000jws63xotb8ju" data-title="在Android上搭建Hexo个人博客（本地篇）" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/12/23/text/">在Android上搭建Hexo个人博客（本地篇）</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2020 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
