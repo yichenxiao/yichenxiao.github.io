@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.13.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="让我们从零开始自定义抖音爆款微信公众号消息推送，定时推送自定义消息，可以是每日亲切的问候，可以是每日天气预报，也可以是你和他（她）相恋的记录。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微信公众号(测试号)消息推送">
+<meta property="og:url" content="http://example.com/2022/09/23/2/index.html">
+<meta property="og:site_name" content="混沌">
+<meta property="og:description" content="让我们从零开始自定义抖音爆款微信公众号消息推送，定时推送自定义消息，可以是每日亲切的问候，可以是每日天气预报，也可以是你和他（她）相恋的记录。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2022/09/23/2/1.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/2.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/3.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/4.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/5.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/6.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/7.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/8.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/9.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/10.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/11.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/12.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/13.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/14.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/15.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/16.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/17.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/18.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/19.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/20.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/java1.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/java2.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/21.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/22.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/23.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/24.png">
+<meta property="og:image" content="http://example.com/2022/09/23/2/25.png">
+<meta property="article:published_time" content="2022-09-23T11:48:31.000Z">
+<meta property="article:modified_time" content="2022-10-23T05:16:53.832Z">
+<meta property="article:author" content="易萧">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/09/23/2/1.png">
+
+
+<link rel="canonical" href="http://example.com/2022/09/23/2/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2022/09/23/2/","path":"2022/09/23/2/","title":"微信公众号(测试号)消息推送"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>微信公众号(测试号)消息推送 | 混沌</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">混沌</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">易萧的咸鱼人生</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7-%E6%B5%8B%E8%AF%95%E5%8F%B7-%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81"><span class="nav-number">1.</span> <span class="nav-text">微信公众号(测试号)消息推送</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%B9%B3%E5%8F%B0%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E5%B8%90%E5%8F%B7%E7%94%B3%E8%AF%B7"><span class="nav-number">1.1.</span> <span class="nav-text">微信公众平台接口测试帐号申请</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A8%A1%E5%9D%97%E6%B6%88%E6%81%AF%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="nav-number">1.2.</span> <span class="nav-text">模块消息接口的创建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON%E8%AF%B7%E6%B1%82%E5%8C%85%E7%BC%96%E5%86%99"><span class="nav-number">1.3.</span> <span class="nav-text">JSON请求包编写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%85%E6%8E%A8%E9%80%81%E5%BE%AE%E4%BF%A1%E5%8F%B7%E8%8E%B7%E5%8F%96"><span class="nav-number">1.4.</span> <span class="nav-text">待推送微信号获取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%84%9A%E6%9C%AC%E7%9A%84%E7%BC%96%E5%86%99"><span class="nav-number">1.5.</span> <span class="nav-text">脚本的编写</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Python%E8%84%9A%E6%9C%AC"><span class="nav-number">1.5.1.</span> <span class="nav-text">Python脚本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java%E8%84%9A%E6%9C%AC"><span class="nav-number">1.5.2.</span> <span class="nav-text">Java脚本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A5%E4%B8%8B%E4%B8%BA%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">1.5.3.</span> <span class="nav-text">以下为配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%92%8C%E9%A3%8E%E5%A4%A9%E6%B0%94key%E8%8E%B7%E5%8F%96"><span class="nav-number">1.5.4.</span> <span class="nav-text">和风天气key获取</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%85%BE%E8%AE%AF%E4%BA%91%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E6%8E%A8%E9%80%81"><span class="nav-number">1.6.</span> <span class="nav-text">腾讯云函数实现定时推送</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">易萧</p>
+  <div class="site-description" itemprop="description">人如混沌，心如死灰</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yichenxiao" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yichenxiao" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/yichenxiao" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/23/2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="易萧">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="混沌">
+      <meta itemprop="description" content="人如混沌，心如死灰">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="微信公众号(测试号)消息推送 | 混沌">
+      <meta itemprop="description" content="让我们从零开始自定义抖音爆款微信公众号消息推送，定时推送自定义消息，可以是每日亲切的问候，可以是每日天气预报，也可以是你和他（她）相恋的记录。">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          微信公众号(测试号)消息推送
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-09-23 19:48:31" itemprop="dateCreated datePublished" datetime="2022-09-23T19:48:31+08:00">2022-09-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-10-23 13:16:53" itemprop="dateModified" datetime="2022-10-23T13:16:53+08:00">2022-10-23</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Symbols count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Symbols count in article: </span>
+      <span>15k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>14 mins.</span>
+    </span>
+</div>
+
+            <div class="post-description">让我们从零开始自定义抖音爆款微信公众号消息推送，定时推送自定义消息，可以是每日亲切的问候，可以是每日天气预报，也可以是你和他（她）相恋的记录。</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="微信公众号-测试号-消息推送"><a href="#微信公众号-测试号-消息推送" class="headerlink" title="微信公众号(测试号)消息推送"></a>微信公众号(测试号)消息推送</h1><h2 id="微信公众平台接口测试帐号申请"><a href="#微信公众平台接口测试帐号申请" class="headerlink" title="微信公众平台接口测试帐号申请"></a>微信公众平台接口测试帐号申请</h2><p>进入<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login">微信公众平台接口测试账号申请</a>，点击“登录”，打开手机微信扫码登录。扫码登录后自动进入“测试号管理”界面，此时我们已经申请成功。“测试号信息”处的内容请务必记下来。<br><img src="/2022/09/23/2/1.png"><br><img src="/2022/09/23/2/2.png"></p>
+<h2 id="模块消息接口的创建"><a href="#模块消息接口的创建" class="headerlink" title="模块消息接口的创建"></a>模块消息接口的创建</h2><p>申请测试号成功后我们滑动网页到达”模块消息接口“处。点击”新增测试模块“，<br><img src="/2022/09/23/2/3.png"><br>模块标题即为消息推送的标题，我们可以随便取。模块内容即为消息推送的内容，里面填什么那么我们微信收到的就是什么。在我们不使用参数的情况下模块内容将会被原封不动的发送出去，我们的布局以及格式将得到保留。使用参数，那么参数处内容将会被JSON请求包中的对应变量替换，参数的使用格式：<code>&#123;&#123;参数名.DATA&#125;&#125;</code>，这里给出模块内容例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">今天是：&#123;&#123;date.DATA&#125;&#125;</span><br><span class="line">当前城市：&#123;&#123;city.DATA&#125;&#125;</span><br><span class="line">今天的天气：&#123;&#123;weather.DATA&#125;&#125;</span><br><span class="line">温度：&#123;&#123;temp.DATA&#125;&#125;</span><br><span class="line">体感温度：&#123;&#123;feelsLike.DATA&#125;&#125;</span><br></pre></td></tr></table></figure>
+<p>可以看见例子中存在多个参数，而我们并没有编写JSON请求包，因此这些参数名我们可以凭空捏造，比如这个参数代表天气预报的数据，我们就可以给他取一个参数名字叫”weather“，结合参数的使用格式就可以直接填写在模块内容中<code>&#123;&#123;weather.DATA&#125;&#125;</code>，填写完模块内容我们点击“提交”。提交后请记下对应模块的“模块ID(用于接口调用)”处内容。<br><img src="/2022/09/23/2/4.png"><br><img src="/2022/09/23/2/5.png"></p>
+<h2 id="JSON请求包编写"><a href="#JSON请求包编写" class="headerlink" title="JSON请求包编写"></a>JSON请求包编写</h2><p>请求包固定格式(<em>号包裹内容请修改为对应内容，修改后不留</em>号)：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   &quot;touser&quot;:&quot;*对应用户列表微信号*&quot;,</span><br><span class="line">   &quot;template_id&quot;:&quot;*对应模块ID*&quot;,</span><br><span class="line">   &quot;url&quot;:&quot;http://weixin.qq.com/download&quot;,</span><br><span class="line">   &quot;topcolor&quot;:&quot;#FF0000“,</span><br><span class="line">   &quot;data&quot;: &#123;</span><br><span class="line">                 /*&quot;变量&quot;: &#123; </span><br><span class="line">                              &quot;value&quot;: &quot;值&quot;, </span><br><span class="line">                              &quot;color&quot;: &quot;字体颜色16进制码&quot; </span><br><span class="line">                              &#125;*/</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意上面的“变量”请更换为上一节我们编写的“模块内容”中的参数名，“值”可以通过后面内容中的脚本获取也可以直接填写我们需要的内容。如果在“模块内容”中编写了多个参数，那么请复制&#x2F;**&#x2F;之间的内容，并在*&#x2F;之后添加”,”号，然后回车另起一行，将我们复制的内容粘贴，这样我们JSON中就存在了两个变量，有多少个参数我们用相同操作粘贴多少个变量，然后改变对应的内容即可。一切编写完后请将包裹变量的”&#x2F;<em>“和”</em>&#x2F;“删除，这样我们便得到了一个JSON请求包。下面是对应上一节例子编写的JSON请求包：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;touser&quot;: touser,</span><br><span class="line"></span><br><span class="line">    &quot;template_id&quot;: template,</span><br><span class="line"></span><br><span class="line">    &quot;url&quot;: &quot;http://weixin.qq.com/download&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;topcolor&quot;: &quot;#FF0000&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;data&quot;: &#123;</span><br><span class="line"></span><br><span class="line">    &quot;date&quot;: &#123;</span><br><span class="line"></span><br><span class="line">        &quot;value&quot;: date_v,</span><br><span class="line"></span><br><span class="line">        &quot;color&quot;: get_color()</span><br><span class="line"></span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">    &quot;city&quot;: &#123;</span><br><span class="line"></span><br><span class="line">        &quot;value&quot;: city_v,</span><br><span class="line"></span><br><span class="line">        &quot;color&quot;: get_color()</span><br><span class="line"></span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">    &quot;weather&quot;: &#123;</span><br><span class="line"></span><br><span class="line">        &quot;value&quot;: weather_v,</span><br><span class="line"></span><br><span class="line">        &quot;color&quot;: get_color()</span><br><span class="line"></span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">    &quot;temp&quot;: &#123;</span><br><span class="line"></span><br><span class="line">        &quot;value&quot;: temp_v,</span><br><span class="line"></span><br><span class="line">        &quot;color&quot;: get_color()</span><br><span class="line"></span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">    &quot;feelsLike&quot;: &#123;</span><br><span class="line"></span><br><span class="line">        &quot;value&quot;: feelsLike_v,</span><br><span class="line"></span><br><span class="line">        &quot;color&quot;: get_color()</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="待推送微信号获取"><a href="#待推送微信号获取" class="headerlink" title="待推送微信号获取"></a>待推送微信号获取</h2><p>我们需要将消息推送到指定微信，因此我们需要获取指定微信的“微信号”，这个微信号在“用户列表”处获取。打开“测试号管理平台”，向下滑动到“测试号二维码”处，使用用待推送微信号扫码关注，扫码关注后“用户列表”将会刷新带推送微信号信息(如果不显示请刷新网页），记下微信号。<br><img src="/2022/09/23/2/6.png"><br><img src="/2022/09/23/2/7.png"></p>
+<h2 id="脚本的编写"><a href="#脚本的编写" class="headerlink" title="脚本的编写"></a>脚本的编写</h2><p>要想将“模块内容”推送出去，我们需要编写一个脚本来实现。脚本的功能很简单，我们可以尽情使用我们熟悉的语言编写。这里提供python和java编写的脚本例子，脚本源码及JAVA编译好的jar已上传至<a target="_blank" rel="noopener" href="https://yichenxiao.lanzouv.com/ir6Kg0cirwwh">蓝奏云</a></p>
+<h3 id="Python脚本"><a href="#Python脚本" class="headerlink" title="Python脚本"></a>Python脚本</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br></pre></td><td class="code"><pre><span class="line"># -*- coding: utf8 -*-</span><br><span class="line"></span><br><span class="line">from requests import get, post</span><br><span class="line">import time</span><br><span class="line">from datetime import date</span><br><span class="line">import random</span><br><span class="line"></span><br><span class="line">#用于获取token</span><br><span class="line">def get_token(appID,appsecret):    </span><br><span class="line">    app_id=appID</span><br><span class="line">    app_secret=appsecret</span><br><span class="line">    url=(&quot;https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=&#123;&#125;&amp;secret=&#123;&#125;&quot;.format(app_id, app_secret))</span><br><span class="line">    access_token = get(url).json()[&#x27;access_token&#x27;]</span><br><span class="line">    return access_token</span><br><span class="line"></span><br><span class="line">#随机获取颜色</span><br><span class="line">def get_color():</span><br><span class="line">    get_colors = lambda n: list(map(lambda i: &quot;#&quot; + &quot;%06x&quot; % random.randint(0, 0xFFFFFF), range(n)))</span><br><span class="line">    color_list = get_colors(100)</span><br><span class="line">    return random.choice(color_list)</span><br><span class="line"></span><br><span class="line">#仅用于获取“和风天气”</span><br><span class="line">def get_weather(key,city):</span><br><span class="line">    headers = &#123;&#x27;User-Agent&#x27;: &#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) &#x27;&#x27;AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36&#x27;</span><br><span class="line">&#125;</span><br><span class="line">    region_url = &quot;https://geoapi.qweather.com/v2/city/lookup?location=&#123;&#125;&amp;key=&#123;&#125;&quot;.format(city, key)</span><br><span class="line">    response = get(region_url, headers=headers).json()</span><br><span class="line">    location_id = response[&quot;location&quot;][0][&quot;id&quot;]</span><br><span class="line">    weather_url = &quot;https://devapi.qweather.com/v7/weather/now?location=&#123;&#125;&amp;key=&#123;&#125;&quot;.format(location_id, key)</span><br><span class="line">    response = get(weather_url, headers=headers).json()</span><br><span class="line">    weather = response[&quot;now&quot;][&quot;text&quot;]</span><br><span class="line">    temp=response[&quot;now&quot;][&quot;temp&quot;]</span><br><span class="line">    feelsLike=response[&quot;now&quot;][&quot;feelsLike&quot;]</span><br><span class="line">    return weather,temp,feelsLike</span><br><span class="line">#用于获取日期</span><br><span class="line">def get_date():</span><br><span class="line">    now=date.today().isoformat()</span><br><span class="line">    week_list = [&quot;星期一&quot;, &quot;星期二&quot;, &quot;星期三&quot;, &quot;星期四&quot;, &quot;星期五&quot;, &quot;星期六&quot;,&quot;星期日&quot;, ]</span><br><span class="line">    week = week_list[date.today().weekday()]</span><br><span class="line">    nowdate=&quot;&#123;&#125; &#123;&#125;&quot;.format(now,week)</span><br><span class="line">    return nowdate</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#发送请求</span><br><span class="line">def send(token,touser,template,date_v,city_v,weather_v,temp_v,feelsLike_v):</span><br><span class="line"></span><br><span class="line">    url=&quot;https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=&#123;&#125;&quot;.format(token)</span><br><span class="line"></span><br><span class="line">    data = &#123;</span><br><span class="line"></span><br><span class="line">        &quot;touser&quot;: touser,</span><br><span class="line"></span><br><span class="line">        &quot;template_id&quot;: template,</span><br><span class="line"></span><br><span class="line">        &quot;url&quot;: &quot;http://weixin.qq.com/download&quot;,</span><br><span class="line"></span><br><span class="line">        &quot;topcolor&quot;: &quot;#FF0000&quot;,</span><br><span class="line"></span><br><span class="line">        &quot;data&quot;: &#123;</span><br><span class="line"></span><br><span class="line">        &quot;date&quot;: &#123;</span><br><span class="line"></span><br><span class="line">            &quot;value&quot;: date_v,</span><br><span class="line"></span><br><span class="line">            &quot;color&quot;: get_color()</span><br><span class="line"></span><br><span class="line">            &#125;,</span><br><span class="line"></span><br><span class="line">        &quot;city&quot;: &#123;</span><br><span class="line"></span><br><span class="line">            &quot;value&quot;: city_v,</span><br><span class="line"></span><br><span class="line">            &quot;color&quot;: get_color()</span><br><span class="line"></span><br><span class="line">            &#125;,</span><br><span class="line"></span><br><span class="line">        &quot;weather&quot;: &#123;</span><br><span class="line"></span><br><span class="line">            &quot;value&quot;: weather_v,</span><br><span class="line"></span><br><span class="line">            &quot;color&quot;: get_color()</span><br><span class="line"></span><br><span class="line">            &#125;,</span><br><span class="line"></span><br><span class="line">        &quot;temp&quot;: &#123;</span><br><span class="line"></span><br><span class="line">            &quot;value&quot;: temp_v,</span><br><span class="line"></span><br><span class="line">            &quot;color&quot;: get_color()</span><br><span class="line"></span><br><span class="line">            &#125;,</span><br><span class="line"></span><br><span class="line">        &quot;feelsLike&quot;: &#123;</span><br><span class="line"></span><br><span class="line">            &quot;value&quot;: feelsLike_v,</span><br><span class="line"></span><br><span class="line">            &quot;color&quot;: get_color()</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    headers = &#123;</span><br><span class="line"></span><br><span class="line">                &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,</span><br><span class="line"></span><br><span class="line">                &#x27;User-Agent&#x27;: &#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) &#x27;</span><br><span class="line">                &#x27;AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36&#x27;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">    response = post(url, headers=headers, json=data).json()</span><br><span class="line"></span><br><span class="line">#主函数,为方便使用腾讯云函数，此处以腾讯云函数默认入口函数做为主函数，如果不使用腾讯云函数请删除函数保留函数体</span><br><span class="line">def main_handler(event, context):</span><br><span class="line">    f=open(&quot;config.txt&quot;)</span><br><span class="line">    config=eval(f.read())</span><br><span class="line"></span><br><span class="line">    appID=config[&quot;app_id&quot;]</span><br><span class="line"></span><br><span class="line">    appsecret=config[&quot;app_secret&quot;]</span><br><span class="line"></span><br><span class="line">    touser=config[&quot;user&quot;]</span><br><span class="line"></span><br><span class="line">    template=config[&quot;template_id&quot;]</span><br><span class="line"></span><br><span class="line">    token=get_token(appID,appsecret)</span><br><span class="line"></span><br><span class="line">    weatherkey=config[&quot;weather_key&quot;]</span><br><span class="line"></span><br><span class="line">    city_v=config[&quot;region&quot;]</span><br><span class="line"></span><br><span class="line">    weather_v,temp_v,feelsLike_v=get_weather(weatherkey,city_v)</span><br><span class="line"></span><br><span class="line">    date_v=get_date()</span><br><span class="line">    print(token)</span><br><span class="line">    send(token,touser,template,date_v,city_v,weather_v,temp_v,feelsLike_v)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="Java脚本"><a href="#Java脚本" class="headerlink" title="Java脚本"></a>Java脚本</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br></pre></td><td class="code"><pre><span class="line">package example;</span><br><span class="line"></span><br><span class="line">import java.io.BufferedReader;</span><br><span class="line">import java.io.InputStreamReader;</span><br><span class="line">import java.io.OutputStream;</span><br><span class="line">import java.net.HttpURLConnection;</span><br><span class="line">import java.net.URL;</span><br><span class="line">import java.util.Date;</span><br><span class="line">import java.util.Random;</span><br><span class="line">import java.util.zip.GZIPInputStream;</span><br><span class="line">import java.io.DataOutputStream;</span><br><span class="line">import java.net.URLEncoder;</span><br><span class="line">import java.text.SimpleDateFormat;</span><br><span class="line"></span><br><span class="line">import com.google.gson.JsonArray;</span><br><span class="line">import com.google.gson.JsonObject;</span><br><span class="line">import com.google.gson.JsonParser;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * InnerCs</span><br><span class="line"> */</span><br><span class="line">public class WeChat &#123;</span><br><span class="line"></span><br><span class="line">    //字符串转json索引后取出</span><br><span class="line">    public static String get_String(StringBuffer stringBuffer,String key,String key1,Boolean array)&#123;</span><br><span class="line">        JsonParser parser = new JsonParser();</span><br><span class="line">        JsonObject configv = (JsonObject)parser.parse(stringBuffer.toString());</span><br><span class="line">        if(key1!=&quot;&quot;)</span><br><span class="line">        &#123;</span><br><span class="line">            if(array==true)</span><br><span class="line">            &#123;</span><br><span class="line">                JsonArray jArray = configv.getAsJsonArray(key1);</span><br><span class="line">                configv = (JsonObject)jArray.get(0);</span><br><span class="line">            &#125;else&#123;</span><br><span class="line">                configv =configv.getAsJsonObject(key1);</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">            </span><br><span class="line">        return configv.get(key).toString().replaceAll(&quot;\&quot;&quot;, &quot;&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //读取配置文件</span><br><span class="line">    public static String config(String key,Boolean bool)&#123;</span><br><span class="line">        String name = (bool==true)?(&quot;config.txt&quot;):(&quot;config.json&quot;);</span><br><span class="line">        StringBuffer stringBuffer = new StringBuffer();  </span><br><span class="line">        try &#123;</span><br><span class="line">            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(Thread.currentThread().getContextClassLoader().getResourceAsStream(name), &quot;utf-8&quot;));</span><br><span class="line">            String temp = null;</span><br><span class="line">            while ((temp = bufferedReader.readLine()) != null) &#123;</span><br><span class="line">                stringBuffer.append(temp);</span><br><span class="line">            &#125;</span><br><span class="line">            bufferedReader.close();</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            // TODO: handle exception</span><br><span class="line">        &#125;</span><br><span class="line">        JsonParser parser = new JsonParser();</span><br><span class="line">        JsonObject configv = (JsonObject)parser.parse(stringBuffer.toString());</span><br><span class="line">        if(bool==false)</span><br><span class="line">            return configv.toString();</span><br><span class="line">        return get_String(stringBuffer, key,&quot;&quot;,false);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //获取token</span><br><span class="line">    public static String get_token(String appID,String appsecret) &#123;</span><br><span class="line">        String url = &quot;https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=&quot;+appID+&quot;&amp;secret=&quot;+appsecret;</span><br><span class="line">        StringBuffer stringBuffer = new StringBuffer();</span><br><span class="line">        try &#123;</span><br><span class="line">            URL oracle = new URL(url);</span><br><span class="line">            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(oracle.openStream(), &quot;utf-8&quot;));</span><br><span class="line">            String temp = null;</span><br><span class="line">            while ((temp = bufferedReader.readLine()) != null) &#123;</span><br><span class="line">                stringBuffer.append(temp);</span><br><span class="line">            &#125;</span><br><span class="line">            bufferedReader.close();</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            // TODO: handle exception</span><br><span class="line">        &#125;</span><br><span class="line">        return get_String(stringBuffer, &quot;access_token&quot;,&quot;&quot;,false);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    //获取随机颜色</span><br><span class="line">    public static String get_color() &#123;</span><br><span class="line">        Random random = new Random();</span><br><span class="line">        StringBuilder stringBuilder=new StringBuilder();</span><br><span class="line">        String temp;</span><br><span class="line">        for (int i = 0; i &lt; 3; i++) &#123;</span><br><span class="line">            temp = Integer.toHexString(random.nextInt(0xFF));</span><br><span class="line">            if (temp.length() == 1) &#123;</span><br><span class="line">                temp = &quot;0&quot; + temp;</span><br><span class="line">            &#125;</span><br><span class="line">            stringBuilder.append(temp);</span><br><span class="line">        &#125;</span><br><span class="line">        return  (&quot;#&quot; + stringBuilder.toString());</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //获取天气信息</span><br><span class="line">    public static String get_weather(String weatherkey,String city,String key,String key1) &#123;</span><br><span class="line">        StringBuffer cityids = new StringBuffer();</span><br><span class="line">        try &#123;</span><br><span class="line">            String city_url = &quot;https://geoapi.qweather.com/v2/city/lookup?location=&quot;+URLEncoder.encode(city,&quot;utf-8&quot;)+&quot;&amp;key=&quot;+weatherkey;</span><br><span class="line">            URL url = new URL(city_url);</span><br><span class="line">            GZIPInputStream gzipInputStream = new GZIPInputStream(url.openStream());</span><br><span class="line">            InputStreamReader inputStreamReader = new InputStreamReader(gzipInputStream, &quot;utf-8&quot;);</span><br><span class="line">            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);</span><br><span class="line">            String line = null;</span><br><span class="line">            while ((line = bufferedReader.readLine())!=null)</span><br><span class="line">                cityids.append(line+&quot; &quot;);</span><br><span class="line">            bufferedReader.close();</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            // TODO: handle exception</span><br><span class="line">        &#125;</span><br><span class="line">        String cityid = get_String(cityids, &quot;id&quot;, &quot;location&quot;,true);</span><br><span class="line"></span><br><span class="line">        StringBuffer stringBuffer = new StringBuffer();</span><br><span class="line">        try &#123;</span><br><span class="line">            String weather_url = &quot;https://devapi.qweather.com/v7/weather/now?location=&quot;+cityid+&quot;&amp;key=&quot;+weatherkey;</span><br><span class="line">            URL url = new URL(weather_url);</span><br><span class="line">            GZIPInputStream gzipInputStream = new GZIPInputStream(url.openStream());</span><br><span class="line">            InputStreamReader inputStreamReader = new InputStreamReader(gzipInputStream, &quot;utf-8&quot;);</span><br><span class="line">            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);</span><br><span class="line">            String line = null;</span><br><span class="line">            while ((line = bufferedReader.readLine())!=null)</span><br><span class="line">                stringBuffer.append(line+&quot; &quot;);</span><br><span class="line">            bufferedReader.close();</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            // TODO: handle exception</span><br><span class="line">        &#125;</span><br><span class="line">        return get_String(stringBuffer, key,key1,false);</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //获取日期</span><br><span class="line">    public static String get_date() &#123;</span><br><span class="line">        Date date = new Date();</span><br><span class="line">        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(&quot;yyyy-MM-dd EEEE&quot;);</span><br><span class="line">        return simpleDateFormat.format(date);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //发送数据</span><br><span class="line">    public static void send(String token,String touser,String template,String city_v,String weather_v,String temp_v,String feelsLike_v) &#123;</span><br><span class="line">        String jsonString = config(&quot;&quot;, false);</span><br><span class="line">        jsonString = jsonString.replace(&quot;touserv&quot;, touser);</span><br><span class="line">        jsonString = jsonString.replace(&quot;templatev&quot;, template);</span><br><span class="line">        jsonString = jsonString.replace(&quot;date_v&quot;, get_date());</span><br><span class="line">        jsonString = jsonString.replace(&quot;city_v&quot;, city_v);</span><br><span class="line">        jsonString = jsonString.replace(&quot;weather_v&quot;, weather_v);</span><br><span class="line">        jsonString = jsonString.replace(&quot;temp_v&quot;, temp_v);</span><br><span class="line">        jsonString = jsonString.replace(&quot;feelsLike_v&quot;, feelsLike_v);</span><br><span class="line">        for(int i=1;i&lt;6;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            jsonString = jsonString.replace(&quot;color&quot;+i, get_color());</span><br><span class="line">        &#125;</span><br><span class="line">        try &#123;</span><br><span class="line">            URL url = new URL(&quot;https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=&quot;+token);</span><br><span class="line">            HttpURLConnection connection = (HttpURLConnection)url.openConnection();</span><br><span class="line">            connection.setDoOutput(true);</span><br><span class="line">            connection.setDoInput(true);</span><br><span class="line">            connection.setUseCaches(false);</span><br><span class="line">            connection.setRequestMethod(&quot;POST&quot;);</span><br><span class="line">            connection.setRequestProperty(&quot;Connection&quot;, &quot;Keep-Alive&quot;);</span><br><span class="line">            connection.setRequestProperty(&quot;Charset&quot;, &quot;UTF-8&quot;);</span><br><span class="line">            byte[] date = jsonString.getBytes();</span><br><span class="line">            connection.setRequestProperty(&quot;Content-Length&quot;, String.valueOf(date.length));</span><br><span class="line">            connection.setRequestProperty(&quot;contentType&quot;, &quot;application/json&quot;);</span><br><span class="line">            connection.connect();</span><br><span class="line">            OutputStream out = new DataOutputStream(connection.getOutputStream());</span><br><span class="line">            out.write(jsonString.getBytes());</span><br><span class="line">            out.flush();</span><br><span class="line">            out.close();</span><br><span class="line">            connection.getResponseCode();</span><br><span class="line"></span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            // TODO: handle exception</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //腾讯云函数入口函数</span><br><span class="line">    public static void main(String args) &#123;</span><br><span class="line">        String appID = config(&quot;app_id&quot;,true);</span><br><span class="line">        String appsecret = config(&quot;app_secret&quot;,true);</span><br><span class="line">        String token = get_token(appID, appsecret);</span><br><span class="line">        String weatherkey = config(&quot;weather_key&quot;,true);</span><br><span class="line">        String city_v = config(&quot;region&quot;,true);</span><br><span class="line">        String weather_v = get_weather(weatherkey, city_v,&quot;text&quot;,&quot;now&quot;);</span><br><span class="line">        String temp_v = get_weather(weatherkey, city_v,&quot;temp&quot;,&quot;now&quot;);</span><br><span class="line">        String feelsLike_v = get_weather(weatherkey, city_v,&quot;feelsLike&quot;,&quot;now&quot;);</span><br><span class="line">        String touser = config(&quot;user&quot;, true);</span><br><span class="line">        String template = config(&quot;template_id&quot;, true);</span><br><span class="line">        send(token,touser,template,city_v,weather_v,temp_v,feelsLike_v);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="以下为配置文件"><a href="#以下为配置文件" class="headerlink" title="以下为配置文件"></a>以下为配置文件</h3><ul>
+<li>python和java共用，该配置文件命名为config.txt<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;app_id&quot;: &quot;此处填入1&quot;,</span><br><span class="line">&quot;app_secret&quot;: &quot;此处填入2&quot;,</span><br><span class="line">&quot;template_id&quot;: &quot;此处填入3&quot;,</span><br><span class="line">&quot;user&quot;: &quot;此处填入4，如果有多个微信号请使用[]包裹，使用,号分割，例：[w1,w2]&quot;,</span><br><span class="line">&quot;weather_key&quot;: &quot;此处填入和风天气key&quot;,</span><br><span class="line">&quot;region&quot;: &quot;此处填入获取天气的地区，例：纽约&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>java专用，该配置文件命名为config.json<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">    &quot;touser&quot;: touserv,</span><br><span class="line"></span><br><span class="line">    &quot;template_id&quot;: templatev,</span><br><span class="line"></span><br><span class="line">    &quot;url&quot;: &quot;http://weixin.qq.com/download&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;topcolor&quot;: &quot;#FF0000&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;data&quot;: &#123;</span><br><span class="line"></span><br><span class="line">    &quot;date&quot;: &#123;</span><br><span class="line"></span><br><span class="line">        &quot;value&quot;: date_v,</span><br><span class="line"></span><br><span class="line">        &quot;color&quot;: color1</span><br><span class="line"></span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">    &quot;city&quot;: &#123;</span><br><span class="line"></span><br><span class="line">        &quot;value&quot;: city_v,</span><br><span class="line"></span><br><span class="line">        &quot;color&quot;: color2</span><br><span class="line"></span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">    &quot;weather&quot;: &#123;</span><br><span class="line"></span><br><span class="line">        &quot;value&quot;: weather_v,</span><br><span class="line"></span><br><span class="line">        &quot;color&quot;: color3</span><br><span class="line"></span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">    &quot;temp&quot;: &#123;</span><br><span class="line"></span><br><span class="line">        &quot;value&quot;: temp_v,</span><br><span class="line"></span><br><span class="line">        &quot;color&quot;: color4</span><br><span class="line"></span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">    &quot;feelsLike&quot;: &#123;</span><br><span class="line"></span><br><span class="line">        &quot;value&quot;: feelsLike_v,</span><br><span class="line"></span><br><span class="line">        &quot;color&quot;: color5</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="和风天气key获取"><a href="#和风天气key获取" class="headerlink" title="和风天气key获取"></a>和风天气key获取</h3><p>打开<a target="_blank" rel="noopener" href="https://id.qweather.com/">和风天气</a>，有账号的输入账号登录，没有账号的点击“免费注册注册”，登录后点击“和风天气开发者控制台”<br><img src="/2022/09/23/2/8.png"><br><img src="/2022/09/23/2/9.png"><br>点击“应用管理”，点击“暂无应用，马上创建一个”<br><img src="/2022/09/23/2/10.png"><br>选择“免费开发版”，“应用名称”随意填写，点击“下一步”<br><img src="/2022/09/23/2/11.png"><br><img src="/2022/09/23/2/12.png"><br>选择“web api”，点击下一步<br><img src="/2022/09/23/2/13.png"><br>“key的名称”随意填写，点击“创建”，点击“完成”<br><img src="/2022/09/23/2/14.png"><br><img src="/2022/09/23/2/15.png"><br>将key的值填入配置文件相应位置即可<br><img src="/2022/09/23/2/16.png"></p>
+<h2 id="腾讯云函数实现定时推送"><a href="#腾讯云函数实现定时推送" class="headerlink" title="腾讯云函数实现定时推送"></a>腾讯云函数实现定时推送</h2><p>进入<a target="_blank" rel="noopener" href="https://cloud.tencent.com/login?s_url=https://console.cloud.tencent.com/scf">腾讯云函数</a>，微信扫码登录<br><img src="/2022/09/23/2/17.png"><br>登录后点击“函数服务”，点击“新建”<br><img src="/2022/09/23/2/18.png"><br>点击“从头开始”，“函数名称”随意填写，“运行环境”按照我们编写的脚本语言进行选择，这里为了对应例子我们选择“Python 3.6”,java请选择“java 8”<br><img src="/2022/09/23/2/19.png"><br>“函数代码”处清空然后将我们的脚本粘贴到里面，“执行方法“将<code>main_handler</code>改为脚本主函数(入口函数)。“java”不能在线编辑，我们需要将我们的脚本用我们熟悉的编译器打包为jar或者zip，然后通过“本地上传zip包”的方式上传，java“执行方法”根据我们的脚本，按照<code>包名.类名::入口函数</code>的格式填写<br><img src="/2022/09/23/2/20.png"></p>
+<ul>
+<li>JAVA不同处配置<br><img src="/2022/09/23/2/java1.png"><br><img src="/2022/09/23/2/java2.png"><br>点击“高级配置”，“执行超时时间”改为“900”<br><img src="/2022/09/23/2/21.png"><br>点击“触发器配置”，点击“自定义配置”，“定时任务名称”随便填写，“触发周期”改为“自定义触发周期”，“Cron表达式”格式可点击“Cron相关文档”查看，这里我们填写<code>0 8 * * *</code>，第一个<code>0</code>表示”分“，第二个<code>8</code>表示”时“，即为每天8点整执行脚本，填写完毕后点击”完成“<br><img src="/2022/09/23/2/22.png"><br>完成后点击“函数代码”，右键“src”，点击“新建文件”<br><img src="/2022/09/23/2/23.png"><br>取名为“config.txt”，将”配置文件“(上一节中)内容粘贴到编辑器里面<br><img src="/2022/09/23/2/24.png"><br>填写完成后点击“部署”，如果想查看效果我们点击“测试”<br><img src="/2022/09/23/2/25.png"></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>易萧
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="http://example.com/2022/09/23/2/" title="微信公众号(测试号)消息推送">http://example.com/2022/09/23/2/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/07/04/1/" rel="prev" title="打造个性化多功能U盘启动盘">
+                  <i class="fa fa-chevron-left"></i> 打造个性化多功能U盘启动盘
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">易萧</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="Symbols count total">21k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">19 mins.</span>
+  </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
